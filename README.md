@@ -211,7 +211,7 @@ Tracks token usage to estimate run cost.
 
 ------------------------------------------------------------------------
 
-## Future improvements
+## Potential Future improvements
 
 -   CLI arguments for paths and labels\
 -   Support JPG / WEBP\
