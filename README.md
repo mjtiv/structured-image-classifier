@@ -16,7 +16,7 @@ This project demonstrates how to move from ad hoc image prompting to a
 
 ## Example Run
 
-![Run Example](Program_Running.png)
+![Run Example](assets/run_example.png)
 
 **Note:**  
 `Fox_Image.png` was intentionally introduced as a *wildcard test case* and was **not included in the allowed label set**.  
