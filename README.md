@@ -1,4 +1,5 @@
 # Structured Image Classifier with OpenAI Vision
+This project demonstrates how to constrain vision model outputs into a fixed label space for more predictable and reproducible behavior.
 
 A Python pipeline for batch image classification using OpenAI vision
 models with:
@@ -41,6 +42,17 @@ The script:
 
 ------------------------------------------------------------------------
 
+## Controlled label space (key design choice)
+
+![Allowed Labels Configuration](assets/allowed_labels.png)
+
+The classifier operates over a **fixed, predefined label set**:
+
+```python
+allowed_labels = ["cat", "dog", "bear", "chicken", "fish", "iguana", "giraffe", "raccoon", "octopus", "owl"]
+```
+------------------------------------------------------------------------
+
 ## Why this repo exists
 
 Most image API examples stop at "send one image and print a result."
@@ -65,18 +77,6 @@ structured-image-classifier/
 ├── Program_Running.png
 └── labeled_images/
 ```
-------------------------------------------------------------------------
-
-## Controlled label space (key design choice)
-
-![Allowed Labels Configuration](assets/allowed_labels.png)
-
-The classifier operates over a **fixed, predefined label set**:
-
-```python
-allowed_labels = ["cat", "dog", "bear", "chicken", "fish", "iguana", "giraffe", "raccoon", "octopus", "owl"]
-```
-
 ------------------------------------------------------------------------
 
 ## Setup
