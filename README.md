@@ -18,6 +18,13 @@ This project demonstrates how to move from ad hoc image prompting to a
 
 ![Run Example](Program_Running.png)
 
+**Note:**  
+`Fox_Image.png` was intentionally introduced as a *wildcard test case* and was **not included in the allowed label set**.  
+As a result, the model mapped it to the closest available class (`dog`) with a lower confidence score (0.91).
+
+This demonstrates an important behavior of constrained classification systems:
+when the correct label is unavailable, the model will still attempt to select the nearest valid option rather than abstaining.
+
 ------------------------------------------------------------------------
 
 ## What this project does
