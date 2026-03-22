@@ -42,6 +42,18 @@ The script:
 
 ------------------------------------------------------------------------
 
+## Structured JSON output
+
+The model is required to return structured JSON in a fixed format:
+
+```json
+{
+  "predicted_label": "string",
+  "confidence": float
+}
+
+------------------------------------------------------------------------
+
 ## Controlled label space (key design choice)
 
 Instead of allowing free-form responses, the model is constrained to select from these allowed labels only.
