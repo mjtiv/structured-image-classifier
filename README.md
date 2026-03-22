@@ -75,6 +75,7 @@ The classifier operates over a **fixed, predefined label set**:
 
 ```python
 allowed_labels = ["cat", "dog", "bear", "chicken", "fish", "iguana", "giraffe", "raccoon", "octopus", "owl"]
+```
 
 ------------------------------------------------------------------------
 
