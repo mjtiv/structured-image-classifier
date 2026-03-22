@@ -64,16 +64,18 @@ structured-image-classifier/
 ├── Agent_Image_Processor_1.4.py
 ├── Program_Running.png
 └── labeled_images/
-
 ------------------------------------------------------------------------
 
 ## Setup
 
+Note: If you have all the python depdencies prior installed etc. --- just skip steps and run directly in BASH or Powershell
+
 ### 1. Clone the repo
 
-```bash
+``` bash
 git clone https://github.com/mjtiv/structured-image-classifier.git
 cd structured-image-classifier
+```
 
 ### 2. Create virtual environment
 
@@ -98,7 +100,7 @@ source .venv/bin/activate
 ### 3. Install dependencies
 
 ``` bash
-pip install -r requirements.txt
+pip install openai python-dotenv
 ```
 
 ### 4. Add API key
@@ -114,7 +116,7 @@ OPENAI_API_KEY=your_api_key_here
 ## How to run
 
 ``` bash
-python src/agent_image_processor.py
+python src/Agent_Image_Processor_1.4.py
 ```
 
 ------------------------------------------------------------------------
