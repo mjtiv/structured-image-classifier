@@ -64,11 +64,16 @@ structured-image-classifier/
 ├── Agent_Image_Processor_1.4.py
 ├── Program_Running.png
 └── labeled_images/
+'''
+
 ------------------------------------------------------------------------
 
 ## Setup
 
-Note: If you have all the python depdencies prior installed etc. --- just skip steps and run directly in BASH or Powershell
+**Quick start:**  
+If you already have the required Python dependencies installed (`openai`, `python-dotenv`), you can skip environment setup and run the script directly.
+
+Otherwise, follow the full setup below.
 
 ### 1. Clone the repo
 
@@ -123,13 +128,51 @@ python src/Agent_Image_Processor_1.4.py
 
 ## Example output
 
+### Typical classifications (in-scope labels)
+
+``` text
+Bear_Image.png -> bear (0.99)
+Cat_Image.png -> cat (0.99)
+Dog_Image.png -> dog (0.99)
+Giraffe_Image.png -> giraffe (0.99)
+```
+
+### Wildcard test case (intentional misclassification)
+
 ``` text
 Fox_Image.png -> dog (0.91)
 ```
 
+**Note:**\
+`Fox_Image.png` was intentionally introduced as a *wildcard test case*
+and was **not included in the allowed label set**.
+
+Because the classifier is constrained to a fixed set of valid labels,
+the model selected the closest available category (`dog`) with a
+slightly lower confidence score.
+
+This demonstrates an important behavior of constrained classification
+systems: - the model will **always choose a valid label** - even when
+the correct answer is unavailable - resulting in a *forced
+approximation* rather than abstention
+
 ------------------------------------------------------------------------
 
 ## Example JSON output
+
+### Typical output
+
+``` json
+[
+  {
+    "predicted_label": "cat",
+    "confidence": 0.99,
+    "filename": "Cat_Image.png"
+  }
+]
+```
+
+### Wildcard case
 
 ``` json
 [
