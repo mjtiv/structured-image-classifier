@@ -1,17 +1,16 @@
 # Structured Image Classifier with OpenAI Vision
+
 This project demonstrates how to constrain vision model outputs into a fixed label space for more predictable and reproducible behavior.
 
-A Python pipeline for batch image classification using OpenAI vision
-models with:
+A Python pipeline for batch image classification using OpenAI vision models with:
 
--   strict JSON-schema output\
--   constrained label selection\
--   batch processing over a local image folder\
--   saved structured results\
--   token and cost tracking
+- strict JSON-schema output  
+- constrained label selection  
+- batch processing over a local image folder  
+- saved structured results  
+- token and cost tracking  
 
-This project demonstrates how to move from ad hoc image prompting to a
-**controlled, reproducible vision pipeline**.
+This project shows how to move from ad hoc image prompting to a **controlled, reproducible vision pipeline**.
 
 ------------------------------------------------------------------------
 
@@ -51,6 +50,7 @@ The model is required to return structured JSON in a fixed format:
   "predicted_label": "string",
   "confidence": float
 }
+```
 
 ------------------------------------------------------------------------
 
@@ -190,11 +190,13 @@ Because the classifier is constrained to a fixed set of valid labels,
 the model selected the closest available category (`dog`) with a
 slightly lower confidence score.
 
-Key behavior
+### Key behavior
+
 This demonstrates an important property of constrained classification systems:
--the model will always return a valid label
--even when the correct label is unavailable
--resulting in a forced approximation rather than abstention
+
+- the model will always return a valid label  
+- even when the correct label is unavailable  
+- resulting in a forced approximation rather than abstention  
 
 ------------------------------------------------------------------------
 
