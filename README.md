@@ -64,7 +64,17 @@ structured-image-classifier/
 ├── Agent_Image_Processor_1.4.py
 ├── Program_Running.png
 └── labeled_images/
-'''
+```
+------------------------------------------------------------------------
+
+## Controlled label space (key design choice)
+
+![Allowed Labels Configuration](assets/allowed_labels.png)
+
+The classifier operates over a **fixed, predefined label set**:
+
+```python
+allowed_labels = ["cat", "dog", "bear", "chicken", "fish", "iguana", "giraffe", "raccoon", "octopus", "owl"]
 
 ------------------------------------------------------------------------
 
