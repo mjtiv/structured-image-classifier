@@ -211,6 +211,17 @@ This demonstrates an important property of constrained classification systems:
   }
 ]
 ```
+------------------------------------------------------------------------
+
+## Failure behavior (important)
+
+When using a constrained label set, the model will:
+
+- always return a valid label  
+- even if the correct label is unavailable  
+- approximate to the closest available category  
+
+This is a key tradeoff in controlled AI systems and should be handled in production (e.g., with an "unknown" class or confidence thresholds).
 
 ------------------------------------------------------------------------
 
