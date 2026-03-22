@@ -44,6 +44,20 @@ The script:
 
 ## Controlled label space (key design choice)
 
+Instead of allowing free-form responses, the model is constrained to select from these allowed labels only.
+
+### Why this matters
+
+- prevents unstructured or inconsistent outputs  
+- enables reliable downstream automation  
+- improves reproducibility across runs  
+
+### Tradeoff
+
+If the correct label is not present, the model will still choose the closest available option.
+
+This behavior is demonstrated in the `Fox_Image.png` example.
+
 ![Allowed Labels Configuration](assets/allowed_labels.png)
 
 The classifier operates over a **fixed, predefined label set**:
@@ -74,7 +88,9 @@ structured-image-classifier/
 ├── LICENSE
 ├── .gitignore
 ├── Agent_Image_Processor_1.4.py
-├── Program_Running.png
+├── assets/
+│   ├── run_example.png
+│   └── allowed_labels.png
 └── labeled_images/
 ```
 ------------------------------------------------------------------------
@@ -132,7 +148,7 @@ OPENAI_API_KEY=your_api_key_here
 ## How to run
 
 ``` bash
-python src/Agent_Image_Processor_1.4.py
+python Agent_Image_Processor_1.4.py
 ```
 
 ------------------------------------------------------------------------
@@ -162,10 +178,11 @@ Because the classifier is constrained to a fixed set of valid labels,
 the model selected the closest available category (`dog`) with a
 slightly lower confidence score.
 
-This demonstrates an important behavior of constrained classification
-systems: - the model will **always choose a valid label** - even when
-the correct answer is unavailable - resulting in a *forced
-approximation* rather than abstention
+Key behavior
+This demonstrates an important property of constrained classification systems:
+-the model will always return a valid label
+-even when the correct label is unavailable
+-resulting in a forced approximation rather than abstention
 
 ------------------------------------------------------------------------
 
