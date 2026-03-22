@@ -56,15 +56,14 @@ This repo shows how to build a **structured pipeline**:
 
 ## Project structure
 
-    structured-image-classifier/
-    ├── README.md
-    ├── requirements.txt
-    ├── .env.example
-    ├── src/
-    │   └── agent_image_processor.py
-    ├── sample_images/
-    ├── outputs/
-    └── assets/
+```text
+structured-image-classifier/
+├── README.md
+├── LICENSE
+├── .gitignore
+├── Agent_Image_Processor_1.4.py
+├── Program_Running.png
+└── labeled_images/
 
 ------------------------------------------------------------------------
 
@@ -72,10 +71,9 @@ This repo shows how to build a **structured pipeline**:
 
 ### 1. Clone the repo
 
-``` bash
+```bash
 git clone https://github.com/mjtiv/structured-image-classifier.git
 cd structured-image-classifier
-```
 
 ### 2. Create virtual environment
 
