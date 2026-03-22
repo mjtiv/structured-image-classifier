@@ -163,6 +163,24 @@ OPENAI_API_KEY=your_api_key_here
 python Agent_Image_Processor_1.4.py
 ```
 
+**Important (update image path):**
+
+The script uses a hardcoded local path for images:
+
+``` python
+location_images = Path(r"D:\Coding_Agents\Image_Agentic_Processing\labeled_images")
+```
+
+This will not work on other machines.
+
+Update it to point to the repository folder:
+
+``` python
+location_images = Path("labeled_images")
+```
+
+Place your images inside the `labeled_images/` directory before running.
+
 ------------------------------------------------------------------------
 
 ## Example output
