@@ -1,0 +1,112 @@
+[
+  {
+    "predicted_label": "bear",
+    "confidence": 0.99,
+    "filename": "Bear_Image.png",
+    "usage": {
+      "input_tokens": 1964,
+      "output_tokens": 22,
+      "total_tokens": 1986
+    }
+  },
+  {
+    "predicted_label": "cat",
+    "confidence": 0.99,
+    "filename": "Cat_Image.png",
+    "usage": {
+      "input_tokens": 1964,
+      "output_tokens": 22,
+      "total_tokens": 1986
+    }
+  },
+  {
+    "predicted_label": "chicken",
+    "confidence": 0.99,
+    "filename": "Chicken_Image.png",
+    "usage": {
+      "input_tokens": 1964,
+      "output_tokens": 23,
+      "total_tokens": 1987
+    }
+  },
+  {
+    "predicted_label": "dog",
+    "confidence": 0.99,
+    "filename": "Dog_Image.png",
+    "usage": {
+      "input_tokens": 1964,
+      "output_tokens": 22,
+      "total_tokens": 1986
+    }
+  },
+  {
+    "predicted_label": "fish",
+    "confidence": 0.99,
+    "filename": "Fish_Image.png",
+    "usage": {
+      "input_tokens": 1964,
+      "output_tokens": 22,
+      "total_tokens": 1986
+    }
+  },
+  {
+    "predicted_label": "dog",
+    "confidence": 0.91,
+    "filename": "Fox_Image.png",
+    "usage": {
+      "input_tokens": 1964,
+      "output_tokens": 22,
+      "total_tokens": 1986
+    }
+  },
+  {
+    "predicted_label": "giraffe",
+    "confidence": 0.99,
+    "filename": "Giraffe_Image.png",
+    "usage": {
+      "input_tokens": 1964,
+      "output_tokens": 24,
+      "total_tokens": 1988
+    }
+  },
+  {
+    "predicted_label": "iguana",
+    "confidence": 0.99,
+    "filename": "Iguana_Image.png",
+    "usage": {
+      "input_tokens": 1964,
+      "output_tokens": 23,
+      "total_tokens": 1987
+    }
+  },
+  {
+    "predicted_label": "octopus",
+    "confidence": 0.99,
+    "filename": "Octopus_Image.png",
+    "usage": {
+      "input_tokens": 1964,
+      "output_tokens": 23,
+      "total_tokens": 1987
+    }
+  },
+  {
+    "predicted_label": "owl",
+    "confidence": 0.99,
+    "filename": "Owl_Image.png",
+    "usage": {
+      "input_tokens": 1964,
+      "output_tokens": 22,
+      "total_tokens": 1986
+    }
+  },
+  {
+    "predicted_label": "raccoon",
+    "confidence": 0.99,
+    "filename": "Racoon_Image.png",
+    "usage": {
+      "input_tokens": 1964,
+      "output_tokens": 24,
+      "total_tokens": 1988
+    }
+  }
+]
